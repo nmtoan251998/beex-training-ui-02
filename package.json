@@ -1,0 +1,30 @@
+{
+  "name": "ui-train-02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon index.js",
+    "build": "npm run sass",
+    "prod": "concurrently \"npm run build\"  \"npm run start\"",
+    "watch":"node-sass -w public/assets/scss -o public/assets/css",
+    "sass": "sass --watch public/assets/scss:public/assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BXV2000/UI-Train-02.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BXV2000/UI-Train-02/issues"
+  },
+  "homepage": "https://github.com/BXV2000/UI-Train-02#readme"
+}
