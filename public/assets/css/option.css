@@ -1,0 +1,116 @@
+.option--container {
+  background-image: linear-gradient(to right bottom, rgba(95, 218, 110, 0.8), rgba(43, 180, 120, 0.8)), url("/assets/Picture-Option/nat-4.jpg");
+  background-size: cover;
+  height: 55rem;
+  margin: 2% 0;
+  clip-path: polygon(2% 20%, 98% 0%, 98% 80%, 2% 100%);
+}
+.option--row {
+  margin: 0% 5% 0% 5%;
+  display: flex;
+  text-align: center;
+}
+.option--row-2 {
+  margin: 10% 0%;
+  padding: 0px;
+  display: flex;
+}
+.option--op60 {
+  opacity: 0.6;
+}
+.option--col {
+  max-width: 35%;
+  border-radius: 1%;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  background-color: aliceblue;
+  margin: 30% 5%;
+  padding: 1rem;
+  line-height: 1.5;
+}
+.option--col > p {
+  margin: 0% 4% 4% 4%;
+}
+.option--col-icon {
+  margin: 8% 35%;
+  font-size: 60px;
+  background: -webkit-linear-gradient(rgba(95, 218, 110, 0.8), rgba(43, 180, 120, 0.8));
+  opacity: 0.9;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.option--col-heading {
+  text-transform: uppercase;
+  margin: 8% 0% 15% 0%;
+}
+.option--col:hover {
+  transform: translate(0px, -20px) scale(1.03);
+  transition: 0.3s;
+}
+
+@media only screen and (max-width: 996px) {
+  .option--container {
+    clip-path: polygon(2% 12%, 98% 0%, 98% 88%, 2% 100%);
+  }
+  .option--col {
+    margin: 5% 5%;
+    min-width: 30%;
+    padding: 0.5rem;
+  }
+  .option--col-icon {
+    margin: 3% 0;
+  }
+  .option--col-heading {
+    font-size: 15px;
+    margin: 0% 0% 3% 0%;
+  }
+  .option--row {
+    display: flex;
+    flex-direction: column;
+    padding-top: 16%;
+  }
+  .option--row-2 {
+    margin: 0 0 0 5.8%;
+  }
+}
+@media only screen and (max-width: 820px) {
+  .option--container {
+    height: 90rem;
+    clip-path: polygon(2% 5%, 98% 0%, 98% 95%, 2% 100%);
+  }
+  .option--col {
+    margin: 5% 5% 5% 0%;
+    min-width: 90%;
+    padding: 0.5rem;
+  }
+  .option--col-icon {
+    margin: 3% 0;
+  }
+  .option--col-heading {
+    font-size: 15px;
+    margin: 0% 0% 3% 0%;
+  }
+  .option--row {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20%;
+  }
+  .option--row-2 {
+    margin: 0 0 0 5.8%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .option--container {
+    height: 80rem;
+    clip-path: polygon(2% 5%, 98% 0%, 98% 95%, 2% 100%);
+  }
+}
+@media only screen and (max-width: 540px) {
+  .option--container {
+    height: 70rem;
+    clip-path: polygon(2% 5%, 98% 0%, 98% 95%, 2% 100%);
+  }
+}
+
+/*# sourceMappingURL=option.css.map */
